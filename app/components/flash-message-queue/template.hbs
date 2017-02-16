@@ -1,0 +1,19 @@
+<!-- {{#if untimedMessages}}
+  <ul class="ul">
+    {{#each untimedMessages as |message|}}
+      <li>
+        {{flash-message
+          message=message
+          removeMessageAction='removeMessage'
+        }}
+      </li>
+    {{/each}}
+  </ul> -->
+<!-- {{/if}} -->
+
+{{#if currentMessage}}
+  {{flash-message
+    message=currentMessage
+    removeMessageAction='removeMessage'
+  }}
+{{/if}}
